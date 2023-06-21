@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CARROUSEL */
+
+.carrousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.imgLogement {
+    width: 100%;
+    height: 55vh;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.arrowBall{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.container-arrow{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.arrow {
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    filter: brightness(25%);
+}
+
+
+.arrow_back:hover{
+    filter: brightness(25%);
+}
+
+
+/* ball */
+
+.container-ball{
+  position: absolute;
+  bottom:0;
+    display: flex;
+    height: 10%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+
+.ball-white{
+    margin-bottom: 20px;
+   margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ball-black{
+    margin-bottom: 20px;
+   margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    filter: brightness(25%);
+}
+
+.ball:hover{
+    filter: brightness(25%);
+}
+
+
+/* ///////////////////////////////////RESPONSIVE MOBILE/////////////////////////////////////// */
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
+
+@media screen and (max-width: 767px) {
+
+    .imgLogement {
+        border-radius: 10px;
+        height: 40vh;
+    }
+
+    .container-arrow img{
+ height: 30px;
+    }
+
+    .ball{
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}

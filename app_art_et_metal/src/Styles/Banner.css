@@ -1,0 +1,45 @@
+.global-banner{
+
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-logo-title{
+  display: flex;
+  flex-direction: row;
+}
+
+.container-logo-title h1{
+    font-size: 15px;
+    color: white;
+    margin: 15px 0 auto 10px;
+    padding: 0;
+}
+
+.global-banner p{
+    font-size: 15px;
+    color: white;
+    margin: 15px 20px auto 0;
+    padding: 0;
+}
+
+.logo img{
+    margin: 10px 0 auto 15px;
+    color: white;
+    height: 5vh;
+    width: 5vh;
+  
+}
+
+.user{
+list-style: none;
+  text-decoration: none;  
+    font-size: 1.5em;
+    color: white;
+    margin: 10px 20px 0 0;
+}

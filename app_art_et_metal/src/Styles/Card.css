@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.card {
+    display: flex;
+    width: 30%;
+    border-radius: 10px;
+    min-width: 235px;
+    max-width: 400px;
+    object-fit: cover;
+    margin: 1% auto 0 auto;
+    text-align: left;
+    box-shadow: 2px 2px 30px rgb(209, 208, 208);
+    position: relative;
+    padding: 0;
+    height: 200px;
+}
+
+.imgCard {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.imgCard img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.linearGradient {
+    bottom: 0;
+    border-radius: 10px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.card h2 {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    padding: 0 0 13px 16px;
+    width: 100px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/* ///////////////////////////////////RESPONSIVE MOBILE/////////////////////////////////////// */
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
+
+@media screen and (max-width: 767px) {
+
+    .card {
+        width: 100%;
+        margin-bottom: 1%;
+        margin-top: 0;
+    }
+
+}
