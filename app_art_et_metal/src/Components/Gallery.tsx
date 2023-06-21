@@ -1,6 +1,13 @@
 import { useEffect, useState } from 'react';
 import Card from './Card';
 import Data from '../datas/datas.js';
+import styled from 'styled-components';
+
+const GaleryStyle = styled.section`
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+`;
 
 const Gallery = () => {
    interface Accommodation {
@@ -27,7 +34,7 @@ const Gallery = () => {
 
    return (
       // affichage
-      <section>
+      <GaleryStyle>
          {datas.map((data: any) => (
             <Card
                key={data.id}
@@ -36,7 +43,7 @@ const Gallery = () => {
                title={data.title}
             />
          ))}
-      </section>
+      </GaleryStyle>
    );
 };
 
