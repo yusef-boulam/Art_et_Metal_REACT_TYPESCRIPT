@@ -2,12 +2,17 @@ import '../Styles/Dropdown.css';
 import React, { useState } from 'react';
 import Arrow from '../Assets/Apropos/Arrow.png';
 
-function Dropdown({ title, description }) {
+interface IDropdownProps {
+   title: string;
+   description: string;
+}
+
+function Dropdown({ title, description }: IDropdownProps) {
    //CREATION DU STATE
    const [isOpen, setIsOpen] = useState(false);
 
    //FONCTION qui modifie isOpen au CLICK
-   function handleClick(event) {
+   function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
       event.preventDefault();
 
       //changment de l'etat de isOpen (open/close)
