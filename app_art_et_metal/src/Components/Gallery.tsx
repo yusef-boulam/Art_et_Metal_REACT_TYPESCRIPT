@@ -26,6 +26,7 @@ const Gallery = () => {
       setDatas(Data);
    }, []);
 
+   // a parametrer une fois les DATAS connues
    interface DataType {
       id: string;
       cover: string;
