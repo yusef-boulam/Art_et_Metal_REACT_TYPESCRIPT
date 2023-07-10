@@ -22,7 +22,6 @@ const Gallery = () => {
 
    // use effect pour la mise à jour des datas
    useEffect(() => {
-      // Suppose que Data est importé d'ailleurs, et qu'il est du type DataType[]
       setDatas(Data);
    }, []);
 

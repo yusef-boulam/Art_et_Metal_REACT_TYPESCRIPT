@@ -6,7 +6,6 @@ import Footer from '../Components/Footer';
 import Data from '../datas/datas';
 import Dropdown from '../Components/Dropdown';
 import Tag from '../Components/Tag';
-import Stars from '../Components/Stars';
 import Slideshow from '../Components/Slideshow';
 import Error404 from '../Pages/Error404';
 
