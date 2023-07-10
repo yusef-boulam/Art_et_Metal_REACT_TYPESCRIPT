@@ -9,6 +9,7 @@ const GaleryStyle = styled.section`
    flex-direction: row;
 `;
 
+// to be updated once the data is known
 const Gallery = () => {
    interface Accommodation {
       id: string;
@@ -20,12 +21,12 @@ const Gallery = () => {
    // state (état, données)
    const [datas, setDatas] = useState<any>([]);
 
-   // use effect pour la mise à jour des datas
+   // use effect for data update
    useEffect(() => {
       setDatas(Data);
    }, []);
 
-   // a parametrer une fois les DATAS connues
+   // to be set once the DATAS are known
    interface DataType {
       id: string;
       cover: string;
@@ -33,7 +34,7 @@ const Gallery = () => {
    }
 
    return (
-      // affichage
+      // display
       <GaleryStyle>
          {datas.map((data: any) => (
             <Card
