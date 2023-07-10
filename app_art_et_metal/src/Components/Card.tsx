@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import '../Styles/Card.css';
 
+// card props typing
 interface CardProps {
    id: string;
    cover: string;

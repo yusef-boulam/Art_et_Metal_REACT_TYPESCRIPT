@@ -35,8 +35,8 @@
 
 
 
-/* ///////////////////////////////////RESPONSIVE MOBILE/////////////////////////////////////// */
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
+/* ///////////////////////////////////RESPONSIVELY MOBILE/////////////////////////////////////// */
+/* On screens, when the width of the window is a maximum of 767px (mobile phone)*/
 
 @media screen and (max-width: 767px) {
 
@@ -44,8 +44,8 @@
     .container-404 {
         padding: 20px;
     }
-    
-    
+
+
     .container-404 h1 {
         font-size: 96px;
         margin-top: 100px;
@@ -53,23 +53,23 @@
         font-family: 'Montserrat';
 
     }
-    
+
     .container-404 p {
         font-size: 18px;
         margin-top: 0px;
         margin-bottom: 100px;
-        margin-left:auto;
+        margin-left: auto;
         margin-right: auto;
         width: 79%;
-    
+
     }
-    
+
     .link404 {
         font-size: 14px;
         color: #FF6060;
         text-decoration-line: underline;
     }
-    
+
 
 
 }

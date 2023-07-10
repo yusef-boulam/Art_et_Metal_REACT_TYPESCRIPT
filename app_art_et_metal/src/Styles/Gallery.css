@@ -11,14 +11,14 @@
 }
 
 
-/* ///////////////////////////////////RESPONSIVE MOBILE/////////////////////////////////////// */
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
+/* ///////////////////////////////////RESPONSIVELY MOBILE/////////////////////////////////////// */
+/* On screens, when the width of the window is a maximum of 767px (mobile phone)*/
 
 @media screen and (max-width: 767px) {
     .section-gallery {
         background: white;
         margin-bottom: 0;
         padding-bottom: 0;
-        
+
     }
 }

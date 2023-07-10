@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+body {
     width: 100%;
     max-width: 1500px;
 }
 
 
-.section-apropos{
+.section-apropos {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.APropos{
+.APropos {
     display: flex;
     flex-direction: column;
     padding: 20px 60px 20px 60px;
-   }
+}
 
-.img-Principale{
+.img-Principale {
     object-fit: cover;
     height: 30vh;
     margin-top: 50px;
@@ -31,23 +31,23 @@ body{
 }
 
 
-/* ///////////////////////////////////RESPONSIVE MOBILE/////////////////////////////////////// */
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
+/* ///////////////////////////////////RESPONSIVELY MOBILE/////////////////////////////////////// */
+/* On screens, when the width of the window is a maximum of 767px (mobile phone)*/
 
 @media screen and (max-width: 767px) {
-    
-.section-apropos{
-    width: 100%;
-}
-    
-.APropos{
-    padding: 20px;
-}
 
-.img-Principale{
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+    .section-apropos {
+        width: 100%;
+    }
 
-  }
+    .APropos {
+        padding: 20px;
+    }
+
+    .img-Principale {
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+}

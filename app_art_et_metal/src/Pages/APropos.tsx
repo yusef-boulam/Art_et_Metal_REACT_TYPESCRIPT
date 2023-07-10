@@ -39,7 +39,7 @@ export default function APropos() {
       },
    ];
 
-   // affichage
+   // display
 
    return (
       <div>

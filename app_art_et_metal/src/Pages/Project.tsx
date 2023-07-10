@@ -11,7 +11,7 @@ import Error404 from '../Pages/Error404';
 
 export default function Project() {
    /////////////////////////////////////////////////////
-   // on recupere l'id du logement
+   // we retrieve the id of the accommodation
    const Id = () => {
       const { id } = useParams();
       return id;
@@ -20,25 +20,25 @@ export default function Project() {
    const id = Id();
 
    ////////////////////////////////////////////////////////////////
-   //CHARGEMENT DES DATAS
+   //LOADING DATA
    // state (état, données)
    const [datas] = useState<any>(Data);
-   // on recupere l'objet correspondant à notre logement dans data
+   // we retrieve the object corresponding to our accommodation in data
    const data = datas.find((data: any) => id === data.id);
 
    console.log(data);
 
-   //si id non trouvé dans les datas on affiche la page erreur
+   // if id not found in the data, the error page is displayed
 
    if (data === undefined) {
       return <Error404 />;
    }
 
-   //modification du title
+   // change of title
    document.title = `Fiche logement / ${data.title}`;
 
    ///////////////////////////////////////////////////////////////////
-   //ON CREE UN TBLEAU POUR LES DROPDOWN(descrition/equipement)
+   // WE CREATE A DROPDOWN BOARD (description/equipment)
    const arrayDropdown = [
       {
          id: 6,
@@ -49,7 +49,7 @@ export default function Project() {
          id: 7,
          title: 'Equipement',
          description: [
-            // on boucle sur les equipements dans la data et on implemente les li dans la description
+            // we loop on the equipment in the data and we implement the li in the description
             <ul className="container-equipement" key={10}>
                {data.equipments.map((equipement: any, index: any) => {
                   return <li key={index}>{equipement}</li>;
@@ -60,7 +60,7 @@ export default function Project() {
    ];
 
    ///////////////////////////////////////////////////////////////////////////
-   //////////////////////////////////AFFICHAGE////////////////////////////////////
+   //////////////////////////////////DISPLAY////////////////////////////////////
    return (
       <div>
          {/* BANNER */}

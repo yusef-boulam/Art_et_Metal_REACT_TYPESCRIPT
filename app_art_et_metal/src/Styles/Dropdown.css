@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-.container-Dropdown{
+.container-Dropdown {
     width: 100%;
 }
 
-.Dropdown{
+.Dropdown {
     padding: 15px 10px 15px 10PX;
     width: 100%;
     background-color: #FF6060;
@@ -24,63 +24,63 @@
     cursor: pointer;
 }
 
-.img-open{
+.img-open {
     width: 25px;
     height: 15px;
     rotate: 180deg;
 }
 
-.img-close{
+.img-close {
     width: 25px;
     height: 15px;
-  
+
 }
 
-.descriptif{
-font-family: 'Montserrat';
-font-size: 18px;
-font-weight: 400;
-line-height: 34px;
-letter-spacing: 0em;
-text-align: left;
-color: #FF6060;
-padding: 25px;
-    margin-top:0;
+.descriptif {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6060;
+    padding: 25px;
+    margin-top: 0;
     background: #F7F7F7;
-border-radius: 5px;
+    border-radius: 5px;
 
 }
 
 
-/* ///////////////////////////////////RESPONSIVE MOBILE/////////////////////////////////////// */
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
+/* ///////////////////////////////////RESPONSIVELY MOBILE/////////////////////////////////////// */
+/* On screens, when the width of the window is a maximum of 767px (mobile phone)*/
 
 @media screen and (max-width: 767px) {
 
 
-    .descriptif{
+    .descriptif {
         font-size: 18px;
         padding: 15px;
     }
 
-    .Dropdown{
+    .Dropdown {
         font-size: 18px;
         padding-left: 10px;
-       
+
     }
 
-    .img-open{
+    .img-open {
         width: 26px;
         height: 15px;
         margin-right: 15px;
         rotate: 180deg;
     }
-    
-    .img-close{
+
+    .img-close {
         width: 26px;
         height: 15px;
         margin-right: 15px;
     }
-    
+
 
 }

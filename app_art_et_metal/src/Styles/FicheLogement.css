@@ -113,8 +113,8 @@ header {
 
 
 
-/* ///////////////////////////////////RESPONSIVE MOBILE/////////////////////////////////////// */
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
+/* ///////////////////////////////////RESPONSIVELY MOBILE/////////////////////////////////////// */
+/* On screens, when the width of the window is a maximum of 767px (mobile phone)*/
 
 @media screen and (max-width: 767px) {
 
@@ -161,7 +161,7 @@ header {
     .container-name-photoUser p {
         font-size: 15px;
         margin-right: 20px;
-        width: 60px;    
+        width: 60px;
         height: 44px;
 
     }

@@ -9,81 +9,81 @@ interface IarrayBalls {
 }
 
 function Slideshow(data: any) {
-   //creation d'un tableau vide pour les BALLS////////////////////////////////////////////////////////////////////////
+   // creating an empty array for BALLS////////////////////////////////////////////////////////////////////////
    const arrayBalls: IarrayBalls[] = [];
 
-   // on ajoute l'url et la couleur blanche pour chaque photo
+   // we add the url and the white color for each photo
    data.data.pictures.forEach((url: string) => {
       arrayBalls.push({ picture: url, active: false });
    });
 
-   //CREATION DU STATE
+   // CREATION OF THE STATE
    const [picture, setPictures] = useState(data.data.cover);
 
-   //CREATION DU STATE PICTURE ET BALL
+   // CREATION OF THE STATE PICTURE AND BALL
    const [balls, setBall] = useState(arrayBalls);
 
-   //FONCTION qui modifie picture au CLICK (retour sur la photo précédente)//////////////////////////////////////////////////////////////////////////
+   //FUNCTION that modifies picture on CLICK (return to previous photo)//////////////////////////////////////////////////////////////////////////
    function handleClickBack(event: React.MouseEvent<HTMLImageElement>) {
       event.preventDefault();
 
-      //on recupere l'index de la photo precedente dans le tableau pictures
+      // we recover the index of the previous photo in the pictures table
       let newIndex = data.data.pictures.indexOf(picture) - 1;
 
-      // si le nouvel index est negatif on repart avec l index le plus grand du tableau
+      // if the new index is negative, we start again with the largest index of the array
       newIndex < 0 && (newIndex = data.data.pictures.length - 1);
 
-      // on fait une copie du tableau
+      // make a copy of the table
       const copyBall = [...balls];
 
-      // remise à zero des balls
+      // resetting the balls
       copyBall.map((ball) => (ball.active = false));
 
-      // on le modifie active qu'on passe à true
+      // we modify active that we pass to true
       copyBall[newIndex].active = true;
 
-      // on sauvegarde dans le state
+      // we save in the state
       setBall(copyBall);
 
-      //on sauvegarde dans le STATE
+      // we save in the state
       setPictures(data.data.pictures[newIndex]);
    }
 
-   //FONCTION qui modifie picture au CLICK (photo suivante)////////////////////////////////////////////////////////////////////////////////////////////////
+   // FUNCTION that modifies picture on CLICK (next picture)////////////////////////////////////////////////////////////////////////////////////////////////
    function handleClickForward(event: React.MouseEvent<HTMLImageElement>) {
       event.preventDefault();
 
-      //on recupere l'index de la photo suivante dans le tableau pictures
+      // we recover the index of the next photo in the pictures array
       let newIndex = data.data.pictures.indexOf(picture) + 1;
-      // si le nouvel index est superieur à la taille du tableau on repart au debut du tableau
+      // if the new index is greater than the size of the array, we restart at the beginning of the array
 
       newIndex === data.data.pictures.length && (newIndex = 0);
 
-      // on fait une copie du tableau
+      // make a copy of the table
       const copyBall = [...balls];
 
-      // remise à zero des balls
+      // resetting the balls
       copyBall.map((ball) => (ball.active = false));
 
-      // on le modifie active qu'on passe à true
+      // we modify active that we pass to true
       copyBall[newIndex].active = true;
 
-      // on sauvegarde dans le state
+      // we save in the state
       setBall(copyBall);
 
-      //on sauvegarde dans le STATE
+      // we save in the STATE
       setPictures(data.data.pictures[newIndex]);
    }
 
-   //on recupere l'id de la ball selectionné .
+   // we retrieve the id of the selected ball
    function handleClickBall(event: React.MouseEvent<HTMLImageElement>) {
       event.preventDefault();
-      // on fait une copie du tableau
+      // make a copy of the table
       const copyBall: IarrayBalls[] = [...balls];
-      // remise à zero des balls
+      // resetting the balls
       copyBall.map((ball) => (ball.active = false));
 
-      // on verifie si ball existe et on modifie active qu'on passe à true
+      // we check if ball exists and we modify active that we pass to true
       const foundBall = copyBall.find(
          (ball) => ball.picture === event.currentTarget.id
       );
@@ -91,10 +91,10 @@ function Slideshow(data: any) {
          foundBall.active = true;
       }
 
-      // on sauvegarde dans le state
+      // we save in the state
       setBall(copyBall);
 
-      //on sauvegarde dans le STATE
+      // we save in the state
       setPictures(event.currentTarget.id);
    }
 
@@ -106,7 +106,7 @@ function Slideshow(data: any) {
             alt="interieure du logement"
          />
 
-         {/* affichage des fleches et des balles uniquement si plusieurs photos */}
+         {/* display of arrows and balls only if several photos */}
          {data.data.pictures.length > 1 && (
             <div className="arrowBall">
                <div className="container-arrow">

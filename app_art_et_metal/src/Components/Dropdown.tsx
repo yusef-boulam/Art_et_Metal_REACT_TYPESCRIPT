@@ -8,24 +8,24 @@ interface IDropdownProps {
 }
 
 function Dropdown({ title, description }: IDropdownProps) {
-   //CREATION DU STATE
+   //CREATION OF THE STATE
    const [isOpen, setIsOpen] = useState(false);
 
-   //FONCTION qui modifie isOpen au CLICK
+   //FUNCTION which modifies isOpen on CLICK
    function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
       event.preventDefault();
 
-      //changment de l'etat de isOpen (open/close)
+      //change of state of isOpen (open/close)
       let CopyisOpen = false;
       isOpen ? (CopyisOpen = false) : (CopyisOpen = true);
 
-      //on sauvegarde dans le STATE
+      //we save in the STATE
       setIsOpen(CopyisOpen);
    }
 
-   //AFFICHAGE
-   //si isOpen on affiche la description
-   // sinon on fait une rotation à l'image arrow
+   //DISPLAY
+   // if isOpen we display the description
+   // otherwise we rotate the image arrow
    return (
       <div className="container-Dropdown">
          <button className="Dropdown" onClick={handleClick}>

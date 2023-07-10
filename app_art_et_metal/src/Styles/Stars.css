@@ -1,26 +1,26 @@
-.container-tag-stars{
+.container-tag-stars {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.container.stars{
+.container.stars {
     height: 36px;
-width: 196px;
+    width: 196px;
 }
 
-.stars{
+.stars {
     margin-left: 7px;
 }
 
-/* ///////////////////////////////////RESPONSIVE MOBILE/////////////////////////////////////// */
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
+/* ///////////////////////////////////RESPONSIVELY MOBILE/////////////////////////////////////// */
+/* On screens, when the width of the window is a maximum of 767px (mobile phone)*/
 
 @media screen and (max-width: 767px) {
 
-    .stars{
-      height: 20px;
-      margin-left: 5px;
+    .stars {
+        height: 20px;
+        margin-left: 5px;
     }
 
 }
