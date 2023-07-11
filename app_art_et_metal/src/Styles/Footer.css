@@ -1,21 +1,27 @@
-.global-footer{
-    height: 10vh;
+.global-footer {
+    height: 9vh;
     width: 100%;
     position: fixed;
     bottom: 0;
-    max-width: 2000px;
 }
 
-.nav-footer{
+.nav-footer {
+    height: 100%;
+}
+
+.nav-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
+    width: 100%;
     padding: 0;
+    margin: 0;
 }
 
-.nav-footer li{
-list-style: none;
-  text-decoration: none;  
+.nav-footer li {
+    list-style: none;
+    text-decoration: none;
     font-size: 1.5em;
     color: white;
 }

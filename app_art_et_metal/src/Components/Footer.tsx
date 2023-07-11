@@ -12,7 +12,7 @@ import {
 export default function Footer() {
    return (
       <footer className="global-footer">
-         <nav>
+         <nav className="nav-footer">
             <ul className="nav-footer">
                <li>
                   <Link to="/" className="nav-accueil">
