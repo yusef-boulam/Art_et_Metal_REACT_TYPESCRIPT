@@ -1,9 +1,7 @@
 .section-gallery {
-
-    background: #f1eeee;
     border-radius: 25px;
-    margin-top: 30px;
-    padding-bottom: 50px;
+    margin-top: 4%;
+    padding: 0 20px 0 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -16,7 +14,6 @@
 
 @media screen and (max-width: 767px) {
     .section-gallery {
-        background: white;
         margin-bottom: 0;
         padding-bottom: 0;
 

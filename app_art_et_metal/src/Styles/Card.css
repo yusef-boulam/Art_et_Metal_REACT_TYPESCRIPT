@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.card {}
+.card {
+    position: relative;
+    margin-bottom: 4%;
+}
 
 .imgCard {
     position: relative;
     height: 100%;
-    width: 100%;
 }
 
 .imgCard img {
@@ -37,15 +39,16 @@
 }
 
 
-/* ///////////////////////////////////RESPONSIVELY MOBILE/////////////////////////////////////// */
-/* On screens, when the width of the window is a maximum of 767px (mobile phone)*/
+/* ///////////////////////////////////RESPONSIVE MOBILE/////////////////////////////////////// */
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
 
 @media screen and (max-width: 767px) {
 
     .card {
         width: 100%;
-        margin-bottom: 1%;
+        margin-bottom: 6%;
         margin-top: 0;
+        height: 200px;
     }
 
 }

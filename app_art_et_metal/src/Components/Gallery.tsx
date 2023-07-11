@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Card from './Card';
 import Data from '../datas/datas.js';
 import styled from 'styled-components';
+import '../Styles/Gallery.css';
 
 const GaleryStyle = styled.section`
    display: flex;
@@ -35,7 +36,7 @@ const Gallery = () => {
 
    return (
       // display
-      <GaleryStyle>
+      <GaleryStyle className="section-gallery">
          {datas.map((data: any) => (
             <Card
                key={data.id}
